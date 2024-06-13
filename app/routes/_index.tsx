@@ -64,7 +64,7 @@ export const Index = () => {
           </ParallaxLayer>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0.7} speed={1} style={{ backgroundColor: '#000000' }} >
+        <ParallaxLayer offset={0.7} speed={0} style={{ backgroundColor: '#000000' }} >
           <ParallaxLayer offset={0.04} speed={-5} horizontal>
             <div className="flex flex-row">
               <img src={Combo2} className="w-24 h-24 filter invert sepia" />
@@ -89,13 +89,13 @@ export const Index = () => {
 
 
         <ParallaxLayer offset={1} speed={0} style={{ backgroundColor: '#C026D3' }} >
-          <ParallaxLayer offset={0.6} speed={1} horizontal>
+          <ParallaxLayer offset={0.6} speed={0.6} horizontal>
             <div>
-              <img src={Combo1} />
+              <img src={Combo1} className="h-80 w-80" />
             </div>
           </ParallaxLayer>
         </ParallaxLayer>
-        
+
         <ParallaxLayer offset={1.5} speed={0} style={{ backgroundColor: '#C026D3' }} >
           <ParallaxLayer offset={-0.8} speed={-0.35} horizontal>
             <h1 className="w-screen pl-6 pr-6 text-4xl text-blue-900 text-right">
@@ -114,24 +114,24 @@ export const Index = () => {
 
         <ParallaxLayer offset={2} speed={0} style={{ backgroundColor: '#000000' }}>
           <ParallaxLayer offset={0.8} speed={0.4} horizontal>
-          <h1 className="w-screen pt-6 pl-6 pr-6 text-3xl text-purple-500">
+            <h1 className="w-screen pt-6 pl-6 pr-6 text-3xl text-purple-500">
               Fecha
-            </h1>          
-            </ParallaxLayer>
+            </h1>
+          </ParallaxLayer>
         </ParallaxLayer>
         <ParallaxLayer offset={2.1} speed={0} style={{ backgroundColor: '#000000' }}>
           <ParallaxLayer offset={1} speed={1} horizontal>
-          <h1 className="w-screen pl-6 pr-6 text-5xl text-white">
+            <h1 className="w-screen pl-6 pr-6 text-5xl text-white">
               Domingo 04 de agosto de 2024
-            </h1>          
-            </ParallaxLayer>
+            </h1>
+          </ParallaxLayer>
         </ParallaxLayer>
         <ParallaxLayer offset={2.4} speed={0} style={{ backgroundColor: '#000000' }}>
-        <ParallaxLayer  offset={-1.4} speed={-0.35} horizontal>
-  <div>
-    <img src={Combo2} />
-  </div>
-</ParallaxLayer>
+          <ParallaxLayer offset={-1.65} speed={-0.35} horizontal>
+            <div className="flex justify-center items-center">    
+              <img src={Combo2} className="h-80 w-80" />
+            </div>
+          </ParallaxLayer>
         </ParallaxLayer>
 
 
