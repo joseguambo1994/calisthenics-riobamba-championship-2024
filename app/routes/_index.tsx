@@ -6,6 +6,10 @@ import Combo2 from "../images/Combo2.svg";
 import Combo3 from "../images/Combo3.svg";
 import Combo4 from "../images/Combo4.svg";
 import Combo5 from "../images/Combo5.svg";
+import ChimborazoBlack from "../images/ChimborazoBlackAndWhite.svg";
+import ChimborazoBlue from "../images/ChimborazoBlue.png";
+import CatedralBlue from "../images/CatedralPurpleYellow.png";
+
 
 
 
@@ -25,7 +29,7 @@ export const Index = () => {
   return (
     <div>
 
-      <Parallax pages={3} ref={ref}>
+      <Parallax pages={6} ref={ref}>
         <ParallaxLayer offset={0} speed={1} style={{ backgroundColor: '#000000' }} >
           <ParallaxLayer offset={0} speed={-3.5} horizontal>
             <div className="w-256 h-256 bg-red-200" />
@@ -56,36 +60,47 @@ export const Index = () => {
           </ParallaxLayer>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0.5} speed={1} style={{ backgroundColor: '#000000' }} >
-          <ParallaxLayer offset={0} speed={2.5} horizontal>
+        <ParallaxLayer offset={0.5} speed={0.4} style={{ backgroundColor: '#000000' }} >
+          <ParallaxLayer offset={0} speed={3.5} horizontal>
             <h1 className="w-screen pb-6 pl-6 pr-6 text-7xl text-blue-500 text-right">
               2024
             </h1>
           </ParallaxLayer>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={0.7} speed={0} style={{ backgroundColor: '#000000' }} >
+        <ParallaxLayer offset={0.6} speed={-2}>
+          <ParallaxLayer offset={0} speed={4} horizontal>
+            <img src={ChimborazoBlue} className="w-128 opacity-90" />        
+          </ParallaxLayer>
+        </ParallaxLayer>
+     
+        <ParallaxLayer offset={0.88} speed={0}>
           <ParallaxLayer offset={0.04} speed={-5} horizontal>
             <div className="flex flex-row">
-              <img src={Combo2} className="w-24 h-24 filter invert sepia" />
+              <img src={Combo2} className="w-24 h-24 filter  sepia" />
             </div>
           </ParallaxLayer>
           <ParallaxLayer offset={0.15} speed={-4} horizontal>
             <div className="flex flex-row">
-              <img src={Combo3} className="w-24 h-24 filter invert sepia" />
+              <img src={Combo3} className="w-24 h-24 filter  sepia" />
             </div>
           </ParallaxLayer>
+
           <ParallaxLayer offset={0.25} speed={-3} horizontal>
             <div className="flex flex-row">
-              <img src={Combo4} className="w-24 h-24 filter invert sepia" />
+              <img src={Combo4} className="w-24 h-24 filter  sepia" />
             </div>
           </ParallaxLayer>
           <ParallaxLayer offset={0.35} speed={-2} horizontal>
             <div className="flex flex-row">
-              <img src={Combo5} className="w-24 h-24 filter invert sepia" />
+              <img src={Combo5} className="w-24 h-24 filter sepia" />
             </div>
           </ParallaxLayer>
         </ParallaxLayer>
+
+
+     
+
 
 
         <ParallaxLayer offset={1} speed={0} style={{ backgroundColor: '#C026D3' }} >
@@ -130,6 +145,55 @@ export const Index = () => {
           <ParallaxLayer offset={-1.65} speed={-0.35} horizontal>
             <div className="flex justify-center items-center">    
               <img src={Combo2} className="h-80 w-80" />
+            </div>
+          </ParallaxLayer>
+        </ParallaxLayer>
+
+
+        <ParallaxLayer offset={3.2} speed={0} style={{ backgroundColor: '#C026D3' }}>
+          <ParallaxLayer offset={-2.4} speed={-0.4} horizontal>
+          <img src={Combo3} className="h-80 w-80" />
+          </ParallaxLayer>
+        </ParallaxLayer>
+        <ParallaxLayer offset={3.7} speed={0} >
+          <ParallaxLayer offset={0.2} speed={0.1} horizontal>
+            <h1 className="w-screen pl-6 pr-6 text-4xl text-blue-900 text-right">
+              Categoría
+            </h1>
+          </ParallaxLayer>
+        </ParallaxLayer>
+       
+        <ParallaxLayer offset={3.75} speed={0}>
+        <ParallaxLayer  offset={0.3} speed={0.1} horizontal>
+            <h1 className="w-screen pl-6 pr-6 text-5xl text-white text-right">
+              Novatos y Semi-Pro            
+              </h1>
+          </ParallaxLayer>
+        </ParallaxLayer>
+
+   
+        
+        <ParallaxLayer offset={4} speed={0} style={{ backgroundColor: '#22b' }}>
+          <ParallaxLayer offset={0} speed={0} factor={1} horizontal>
+            <h1 className="text-6xl text-fuchsia-600">Premios y Sorpresas</h1>
+          </ParallaxLayer>
+        </ParallaxLayer>
+        <ParallaxLayer offset={4.4} speed={0} style={{ backgroundColor: '#22b' }}>
+          <ParallaxLayer offset={0} speed={0} horizontal>
+            <div>
+            <img src={Combo4} className="h-80 w-80" />
+            </div>
+          </ParallaxLayer>
+        </ParallaxLayer>
+
+
+        <ParallaxLayer offset={5.1} speed={0} style={{ backgroundColor: '#000' }}>
+          <ParallaxLayer offset={0} speed={0} factor={1} horizontal>
+            <h1 className="text-6xl text-black-600">Cero costo de inscripción</h1>
+          </ParallaxLayer>
+          <ParallaxLayer offset={0} speed={0} horizontal>
+            <div>
+            <img src={Combo5} className="h-80 w-80" />
             </div>
           </ParallaxLayer>
         </ParallaxLayer>
