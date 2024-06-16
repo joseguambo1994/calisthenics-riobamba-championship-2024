@@ -44,7 +44,7 @@ export const Index = () => {
   }, [ref]);
 
   return (
-    <div ref={containerRef} className="flex justify-center items-center min-h-screen">
+    <div ref={containerRef} className="flex justify-center">
 
       <Parallax pages={6} ref={ref} className="bg-blue-900 md:max-w-screen-sm lg:max-w-screen-sm xl:max-w-screen-sm">
          
@@ -160,7 +160,7 @@ export const Index = () => {
         <ParallaxLayer offset={1.45} speed={0.4} >
           <ParallaxLayer offset={-0.4} speed={-0.2} horizontal>
           <h1 className="w-screen pl-6 pr-6 text-5xl text-white text-right font-semibold">
-          Polideportivo de la Ciudadela Politénica
+          Polideportivo de la Ciudadela Politécnica
             </h1>
           </ParallaxLayer>
           
